@@ -5,6 +5,7 @@ public class Person {               //Все поля по умолчанию п
     {
         System.out.println(str);
     }
+
     Person (int height, float weight)                    //Конструктор, должен быть назван как и класс
     {
         this.height = height;                            //this.height говорит о том, что мы работает переменной класса,

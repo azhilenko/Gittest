@@ -35,7 +35,8 @@ public class main {
         maks.say ("Hi, i'm Maks");
         System.out.println("Height Maks: " + maks.height + "\nWeight: " + maks.weight);
 
-
+        Student vova = new Student(156, 56f,3);
+        System.out.println("\b" + vova.course);
 }
 
     private static int func (int a, int b)    //private только для этого класса, public открыт для других классов,
