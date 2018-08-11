@@ -21,18 +21,21 @@ public class main {
 //        int temp = func (23, 74);             //передаем 2 значения в функцию и храним результат в переменной temp
 //        System.out.println("Results is: "+temp);
 
-        Person maks = new Person();
-        maks.height = 180;
-        maks.weight = 78.4f;
-
-        maks.say ("hi");
-        System.out.println("Height Maks: " + maks.height + "\nWeight: " + maks.weight);
-
-        Person oleg = new Person();
+        Person oleg = new Person();                                 //Присваиваем параметры переменным
         oleg.height = 195;
         oleg.weight = 96.7f;
 
         System.out.println("Height Oleg: " + oleg.height + "\nWeight: " + oleg.weight);
+
+
+        Person maks = new Person(180, 78.4f);       //Вместо присваивания переменным мы передаем параметры через конструктор
+//        maks.height = 180;
+//        maks.weight = 78.4f;
+
+        maks.say ("Hi, i'm Maks");
+        System.out.println("Height Maks: " + maks.height + "\nWeight: " + maks.weight);
+
+
 }
 
     private static int func (int a, int b)    //private только для этого класса, public открыт для других классов,
