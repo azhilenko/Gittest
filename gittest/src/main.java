@@ -20,6 +20,10 @@ public class main {
         //Функция и возвращаемый метод
 //        int temp = func (23, 74);             //передаем 2 значения в функцию и храним результат в переменной temp
 //        System.out.println("Results is: "+temp);
+        Person.summ_pers=3;
+        Person.write("Quantity persons: ");
+        System.out.println(Person.summ_pers + "\n");
+
 
         Person oleg = new Person();                                 //Присваиваем параметры переменным
         oleg.height = 195;
@@ -32,11 +36,11 @@ public class main {
 //        maks.height = 180;
 //        maks.weight = 78.4f;
 
-        maks.say ("Hi, i'm Maks");
+        maks.say ("\nHi, i'm Maks");
         System.out.println("Height Maks: " + maks.height + "\nWeight: " + maks.weight);
 
         Student vova = new Student(156, 56f,3);
-        System.out.println("\b" + vova.course);
+        System.out.println("Height Vova: " + vova.height + "\nWeight: " + vova.weight + vova.course);
 }
 
     private static int func (int a, int b)    //private только для этого класса, public открыт для других классов,
